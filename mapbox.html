@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet"  href="css/font-awesome.min.css">
+	<style type="text/css">
+	@font-face{
+		font-family: my-font;
+		src:url("font/OpenSans-Bold.ttf");
+	}
+		html, body{
+			padding: 0;
+			margin: 0;
+			border: 0;
+			outline: 0;
+		}
+		.wrapper{
+			width: 1000px;
+			margin: auto;
+			/*background-color: orange;*/
+		}
+		.clearfix{
+			clear: both;
+		}
+		a{
+			cursor: pointer;
+		}
+		h1{
+			font-family: "my-font";
+			color: rgba(0, 0, 0, 0.75);
+			font-size: 30px;
+		}
+		#head{
+			background-color: #38A9C6;
+			height: 640px;
+		}
+		#head #head-link{
+			padding-top: 30px;
+		}
+		
+		#head-left{
+			float: left;
+
+		}
+		#head-left a{
+			text-decoration: none;
+			font-size: 20px;
+			color: #fff;
+
+		}
+		#head-right{
+			float: right;
+		}
+		#head-right a{
+			text-decoration: none;
+			padding: 5px 8px;
+			font-size: 14px;
+			font-family: "tahoma";
+		}
+		#head-right a:nth-child(1){
+			color: #fff;
+		}
+		#head-right a:nth-child(2){
+			color: #fff;
+		}
+		#head-right a:nth-child(3){
+			color: #fff;
+		}
+		#head-right a:nth-child(4){
+			color: #fff;
+		}
+		#head-right a:nth-child(5){
+			color: #D0D5D7;
+		}
+		#head-right a:nth-child(6){
+			color: #D0D5D7;
+		}
+		#head-right a:nth-child(7){
+			color: #D0D5D7;
+		}
+		#head-right a:nth-child(8){
+			color: #D0D5D7;
+		}
+		#head-right a:nth-child(9){
+			color: #D0D5D7;
+		}
+		#head-right a:nth-child(10){
+			color: #fff;
+			border: 2px solid #fff;
+			border-radius: 4px;
+		}
+		#head-right a:hover{
+			background-color: #44B2CF;
+		}
+		
+		#slide{
+			float: right;
+			
+		}
+		#slide .items{
+			position: relative;
+			height: 400px;
+		}
+		#slide .items .item{
+			width: 100%;
+			height: 100%;
+			
+			background-position: center;
+            position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+		#slide .paging{
+		text-align: center;
+		padding-bottom: 10px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		}
+		#slide .paging span{
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			border: 1px solid #fff;
+			display: inline-block;
+			margin: 10px;
+		}
+
+		#slide .paging span.active{
+			background-color: #fff;
+		}
+
+		#describe-image{
+			float: left;
+			
+		}
+		#describe-image h2{
+			font-family: "Brandon",sans-serif;
+			font-size: 40px;
+			color: #fff;
+			padding-top: 80px;
+
+
+		}
+		#button-try{
+			border: 2px solid #fff;
+			font-size: 14px;
+			text-align: center;
+			background-color: #fff;
+			color: #38A9C6;
+			padding: 8px 30px;
+			border-radius: 4px;
+			text-decoration: none;
+
+		}
+		#button-how{
+			border: 2px solid #fff;
+			font-size: 14px;
+			text-align: center;
+			color: #fff;
+			padding: 8px 30px;
+			border-radius: 4px;
+			margin-left: 10px;
+			text-decoration: none;
+
+		}
+		#content h1{
+			
+			text-align: center;
+			padding-top: 60px;
+		}
+		#link{
+			background-color: #F8F8F8;
+			height: 180px;
+			margin-top: 60px;
+			padding-top: 50px;
+		}
+		.link-column{
+			float: left;
+			width: 21.3%;
+			margin-left: 2%;
+
+		}
+		.link-column:first-child{
+			margin-left: 0;
+
+		}
+
+		.link-column:first-child{
+			width: 30%;
+		}
+		.link-column a{
+			text-decoration: none;
+			color: #404040;
+			font-size: 20px;
+			
+
+		}
+		.link-column a:hover{
+			color: #000;
+		}
+
+		#showcase-button{
+			border: 2px solid #fff;
+			font-size: 14px;
+			text-align: center;
+			background-color: #3333CC;
+			color: #fff;
+			padding: 8px 30px;
+			border-radius: 4px;
+
+		}
+		#showcase-button:hover{
+			background-color: #3BB2D0
+
+		}
+		#map{
+			height: 468px;
+			background-image: url('images/studio-1.jpg');
+		}
+		#map .wrapper h1{
+			color: #fff;
+			font-size: 30px;
+			margin-top: 0;
+			padding-top: 60px;
+
+		}
+		#map .wrapper #maps{
+			float: left;
+
+
+		}
+
+		#map .wrapper #maps img{
+			width: 100%;
+			height: 330px;
+			padding-top: 23px;
+			
+
+		}
+		
+		 #map .wrapper #describ-map {
+		 	float: left;
+
+		 }
+		 #map .wrapper #describ-map p{
+		 	padding-top: 64px; 
+		 	padding-left: 40px;
+		 	color: #fff;
+		 	font-size: 18px;
+		 }
+		 #button-design{
+			float: left;
+			border: 2px solid #fff;
+			font-size: 14px;
+			text-align: center;
+			color: #fff;
+			padding: 10px 60px;
+			border-radius: 4px;
+			margin-top: 20px;
+			margin-left: 40px;
+			text-decoration: none;
+			
+		}
+		#button-design:hover{
+			border: 2px solid #929598;
+			color: #929598;
+		}
+		#apps{
+			background-color: #F8F8F8;
+			height: 740px;
+		}
+		#apps .wrapper h1{
+			color: #453E3E;
+			font-size: 30px;
+			padding-top: 60px;
+			margin-top: 0;
+		}
+		#apps .wrapper span{
+			color: #907C7C;
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
+		#box-link a{
+			display: block;
+			background-color: #fff;
+			border: 1px solid #E5E5E5;
+			width: 33.134%; 
+			float: left;
+			text-decoration: none;
+			margin-top: 40px;
+			height: 420px;
+
+		}
+		.picture-link{
+			width: 80%;
+			padding: 40px 40px;
+
+		}
+		#apps .wrapper h3{
+			padding-left: 50px;
+			color: rgba(0, 0, 0, 0.75);
+			font-size: 22px;
+		}
+		#apps .wrapper p{
+			padding-left: 50px;
+			color: rgba(0, 0, 0, 0.5);
+			font-size: 15px;
+		}
+		#button-develop{
+			float: right;
+			border: 2px solid #fff;
+			font-size: 14px;
+			text-align: center;
+			background-color: #3366FF;
+			color: #fff;
+			padding: 10px 30px;
+			border-radius: 4px;
+			margin-top: 40px;
+			text-decoration: none;
+			
+		}
+		#button-develop:hover{
+			background-color: #3BB2D0;
+		}
+		#build-API{
+			background-color: #fff;
+			height: 830px;
+		}
+		#build-API .wrapper h1{
+			color: #404040;
+			font-size: 30px;
+			padding-top: 80px;
+
+		}
+		#build-API .wrapper p{
+			color:  rgba(0, 0, 0, 0.75);
+			font-size: 18px;
+
+		}
+		#build-API .wrapper img{
+			width: 85%;
+			padding-top: 40px;
+		}
+		#scale{
+			height: 620px;
+			background-image: url('images/2.png');
+		}
+		#scale .wrapper h1{
+			color: #fff ;
+			font-size: 30px;
+			padding-top: 80px;
+		}
+		#scale .wrapper p{
+			color: #fff;
+			font-size: 18px ;
+		}
+		
+		#scale .wrapper .describ-text{
+			float: left;
+			background-color: #fff;
+			width: 49.9%; 
+			margin-top: 140px;
+			border-right: 1px solid #E5E5E5;
+
+		}
+		#scale .wrapper .describ-text:last-child{
+			border-right: none;
+		}
+		#scale .wrapper .describ-text h2{
+			padding-left: 35px;
+			padding-top: 20px;
+			color: #404040;
+			font-size: 22px;
+
+		}
+		#scale .wrapper .describ-text p{
+			padding-left: 35px;
+			padding-top: 20px;
+			color: rgba(0,0,0,0.5);
+			font-size: 15px;
+
+		}
+		#Awesome{
+			background-color: #F8F8F8;
+			height: 720px;
+		}
+		#Awesome .wrapper h1{
+			color: rgba(0, 0, 0, 0.75);
+			font-size: 30px;
+			margin-top: 0;
+			padding-top: 100px;
+		}
+		#Awesome .wrapper p{
+			color: rgba(0, 0, 0, 0.75);
+			font-size: 18px;
+		}
+		#Awesome .wrapper img{
+			width: 100%;
+			padding-top: 30px;
+		}
+		#start-now{
+			background-color: #3BB2D0;
+			height: 250px;
+			
+		}
+		#start-now  h2{
+			color: #fff;
+			font-size: 40px;
+			margin-top: 0;
+			padding-top: 60px;
+			text-align: center;
+		}
+		#sign-up{
+			text-align: center;
+		}
+		#start-now #sign-up a{
+			text-decoration: none;
+			border: 2px solid #fff;
+			border-radius: 4px;
+			color: #fff;
+			text-align: center;
+			padding: 10px 160px;
+			font-size: 18px;
+			
+		}
+		#cadr{
+			background-color: #fff;
+			height: 480px;
+		}
+		.cadr-border{
+		 	border: 1px solid #DFDFDF;
+		 	height: 100px;
+		 	margin-bottom: 20px;
+
+		 }
+		 .cadr-border:first-child{
+		 	margin-top: 90px;
+		 }
+		.cadr-logo{
+			float: left;
+			width: 25%;
+			text-align: center;
+			height: 65px;
+			padding-top: 35px;
+		}
+		 .cadr-content{
+		 	color: rgba(0,0,0,0.5);
+		 	float: left;
+		 	width: 75%;
+		 	height: 100px;
+		 	background: #F8F8F8;
+		 	position: relative;
+		 	border-radius: 4px;
+		 }
+		 .cadr-content:before{
+		 	content: "";
+		 	position: absolute;
+		 	width: 0;
+		 	height: 0;
+		 	border-top: 8px solid transparent;
+		 	border-right: 16px solid #F8F8F8;
+		 	border-bottom: 8px solid transparent;
+		 	margin: 30px 0 0 -16px;
+		 	top: 10%;
+		 	left: 0; 
+		 }
+		 .cadr-content:hover{
+		 	color: rgba(0,0,0,0.75);
+		 }
+		 .cadr-content p{
+		 	font-size: 22px;
+		 	padding-left: 40px;
+		 }
+		 #button-learn{
+		 	float: right;
+			border: 2px solid #fff;
+			font-size: 14px;
+			text-align: center;
+			background-color: #3366FF;
+			color: #fff;
+			padding: 10px 30px;
+			border-radius: 4px;
+			margin-top: 10px;
+			text-decoration: none;
+		 }
+		 #button-learn:hover{
+		 	background-color: #3BB2D0;
+		 }
+		 #footer{
+		 	background-color: #F8F8F8;
+		 	height: 430px;
+		 	padding-top: 30px;
+		 }
+		 .link-footer{
+		 	float: left;
+		 	width: 15.82%;
+		 	margin-left: 1%;
+		 	
+		 	
+		 }
+		 .link-footer:first-child{
+		 	margin-left: 0;
+		 }
+		 .blue-link{
+		 	text-decoration: none;
+		 	font-size: 14px;
+		 	color: #3366FF;
+		 	line-height: 25px;
+
+		 }
+		 .blue-link:hover{
+		 	color: #3BB2D0;
+		 }
+		 #footer .wrapper .link-footer .gray-link{
+		 	text-decoration: none;
+		 	font-size: 14px;
+		 	color: gray;
+		 	line-height: 25px;
+		 }
+		  #footer .wrapper .link-footer .gray-link:hover{
+		 	color: #000;
+		 }
+		 .link-footer img{
+		 	width: 100%;
+
+
+		 }
+		 #follow{
+		 	padding: 14px;
+		 	color: rgba(0,0,0,0.5);
+		 	float: left;
+		 	width: 13%;
+		 	height: 80px;
+		 	background: #EEEEEE;
+		 	position: relative;
+		 	border-radius: 4px;
+		 }
+		 #follow:before{
+		 	content: "";
+		 	position: absolute;
+		 	width: 0;
+		 	height: 0;
+		 	border-top: 8px solid transparent;
+		 	border-right: 16px solid #EEEEEE;
+		 	border-bottom: 8px solid transparent;
+		 	margin: 15px 0 0 -14px;
+		 	top: 10%;
+		 	left: 0; 
+		 }
+
+		 #email{
+		 	padding-top: -10px;
+		 	position: relative;
+		 }
+		 #email i{
+		 	position: absolute;
+		 	left: 5px; 
+		 	bottom: 18px;
+		 	color: #DDD5DD;
+		 	padding-left: 10px;
+
+		 }
+		 #email input{
+		 	padding-left: 40px;
+		 }
+		 #page-footer-email{
+		 	float: left;
+		 	width: 37%;
+		 	height: 38px;
+		 }
+		 #page-footer-submit{
+		 	float: left;
+		 	width: 15%;
+		 	height: 36px;
+		 	text-decoration: none;
+		 	color: #fff;
+		 	font-weight: bold;
+		 	font-size: 18px;
+		 	text-align: center;
+		 	background-color: #A8A8A8;
+		 	padding-top: 5px;
+		 }
+		 #page-footer-submit:hover{
+		 	background-color: #7B7B7B;
+		 	
+		 }
+		 #copy-right{
+		 	text-align: center;
+		 	margin-top: 60px;
+		 }
+		 #copy-right a{
+		 	text-decoration: none;
+		 	color: #7CCCEB;
+		 }
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div id="head">
+		<div class="wrapper">
+			<div id="head-link">
+				<div id="head-right">
+					<a href="">Design</a>
+					<a href="">Data</a>
+					<a href="">develop</a>
+					<a href="">Industries</a>
+					<a href="">Enterprise</a>
+					<a href="">Plans</a>
+					<a href="">Help</a>
+					<a href="">Blog</a>
+					<a href="">Sign in</a>
+					<a href="">Sign up</a>
+				</div>	
+				<div id="head-left">
+					<a href="">Mapbox</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div>
+				<div id="describe-image">
+					<h2>DESIGN THE<br/>MAP YOUR<br/>CHECK IN<br/>DESERVES. </h2><br/>
+					<span href="" id="button-try">Try It for free</span>
+					<span id="button-how">How It works <i class="fa fa-arrow-down"></i></span>
+				</div>
+				<div id="slide">
+					<div class="items">
+						<img src="images/1@2x.png" class="item" style="display:block" />   
+						<img src="images/4@2x.png" class="item"/>  
+						<img src="images/2@2x.png" class="item"/>   
+						<img src="images/3@2x.png" class="item"/>   
+					</div>
+					<div class="paging">
+						<span class="active"></span><span></span><span></span><span></span>
+					</div>
+					
+				</div>
+				<div class="clearfix"></div>
+			</div>	
+		</div>
+	</div>	
+	<!-- !-->
+	<div id="content">
+			<h1>We make it possible to pin travel spots on Pinterest,<br/> find restaurants on Foursquare, and visualize data<br/> on GitHub.</h1>
+	</div>
+	<!-- !-->
+	<div id="link">
+		<div class="wrapper">
+			<div class="link-column">
+			<span>Loved by thousands of brands.</span><br/><br/>
+			<a href="" id="showcase-button">showcase <i class="fa fa-arrow-right"></i></a>
+
+
+			</div>
+			<div class="link-column">
+				<a href="">FOURSQUARE</a><br/><br/>
+				<a href="">GitHub</a><br/><br/>
+				<a href="">Roadtsipp</a>
+			</div>
+			<div class="link-column">
+				<a href="">EVERNOTE</a><br/><br/>
+				<a href="">NATIONAL GEOGRAPHIC</a><br/>
+				<a href="">Etsy</a>
+			</div>
+			<div class="link-column">
+				<a href="">Pinterest</a><br/><br/>
+				<a href="">Squre</a><br/><br/>
+				<a href="">FINANCIAL TIMES</a>
+			</div>
+			<div class="clearfix"></div>
+			
+		</div>
+	</div>
+	<!-- !-->
+	<div id="map">
+		<div class="wrapper">
+			
+				<div>
+					<h1>Design incredible maps with Mapbox Studio</h1>
+				</div>
+				<div>
+				<div id="maps">
+					<img src="images/studio-editor-1.jpg">
+				</div>
+				<div id="describ-map">
+					<P>Quickly create beautiful interactive<br/> maps and data visualizations using<br/>
+					 Mapbox Studio. For basic<br/> customization, create maps with our<br/> online Map Editor.</P>
+					 <a href=""  id="button-design">Desig with Mapbox<i class="fa fa-arrow-right"></i></a>
+					
+				
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- !-->
+	<div id="apps">
+		<div class="wrapper">
+			<h1>Develop Apps</h1>
+			<span>Add custom maps to your apps and sites in minutes.</span>
+			<div id="box-link" >
+				<a href="">
+					  <img src="images/mapboxjs@2x.png" class="picture-link" />
+					  <h3>Mapbox.js</h3>
+					  <p>Build mobile and web applications<br/>whit Mapbox.js,our open-source<br/>JavaScript library.</p>
+				</a>
+				<a href="">
+					<img src="images/ios@2x.png" class="picture-link" />
+					<h3>iOS SDK</h3>
+					<p>Build native applications on iOS <br/>with the Mapbox iOS SDK or<br/>MBXMapKit </p>
+				</a>
+				<a href="">
+					<img src="images/android@2x.png" class="picture-link"/>
+					<h3>Android SDK</h3>
+					<p>Build native applications on<br/>Android with the Mapbox Android<br/>SDK </p>
+				</a>
+				<div class="clearfix"></div>
+			</div>
+				<a href="" id="button-develop" >Develop with mapbox<i class="fa fa-arrow-right"></i></a>
+		</div>
+	</div>
+	<!-- !-->
+	<div id="build-API">
+		<div class="wrapper">
+			<h1>Build on our open API</h1>
+			<p>From geocoding and routing to offline caching, our open API is more than just<br/>
+			 beautiful maps. We make it easy to power everything geo in your application.
+			</p>
+			<img src="images/api.png" />
+		</div>
+	</div>
+	<!-- !-->
+	<div id="scale">
+		<div class="wrapper">
+			<h1>Scale for all of your users</h1>
+			<p>Mapbox is fast everywhere in the world, on any device, for hundreds of millions<br/>of users.</p>
+			<div class="describ-text">
+				<h2>24/7 monotoring</h2>
+				<p>Mapbox servers are fully redundant, with automatic<br/> failover. If a server fails, traffic is re-routed to ensure maps<br/> are served without downtime. 
+				</p>
+			</div>
+			<div class="describ-text">
+				<h2>Fast</h2>
+				<p>Mapbox serves maps from 30 globally distributed edge<br/>  
+				servers. With an edge server close by, Mapbox is fast no<br/>matter where you are. 
+				</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- !-->
+	<div id="Awesome">
+		<div class="wrapper">
+			<h1>Awesome support</h1>
+			<p> Fast and knowledgable support is part of every Mapbox plan, and our<br/>
+			 enterprise customers get incredible same-day help.
+			</p>
+			<img src="images/support.png" />
+		</div>
+	</div>
+	<!-- !-->
+	<div id="start-now">
+		<h2>START NOW </h2>
+		<div id="sign-up">
+			<a href="">sign up</a>
+		</div>
+	</div>
+	<!-- !-->
+	<div id="cadr">
+		<div class="wrapper">
+			<div class="cadr-border">
+				<a href="">
+					<div class="cadr-logo">WIRED</div>
+				</a>
+				<a href="">
+					<div class="cadr-content">
+						<p>"A Cloudless Atlas - How Mapbox Aims to Make the Worlds Most Beautiful Map" </p>
+					</div>
+				</a>
+			</div>
+			<div class="cadr-border">
+				<a href="">
+					<div class="cadr-logo">TE</div>
+				</a>
+				<a href="">
+					<div class="cadr-content">
+						<p>"Google Maps Rival Mapbox Add Smart Directions" </p>
+					</div>
+				</a>
+			</div>
+			<div class="cadr-border">
+				<a href="">
+					<div class="cadr-logo">WALL STREET JOURNAL</div>
+				</a>
+				<a href="">
+					<div class="cadr-content">
+						<p>"Google Maps Open-Source Challenger Mapbox Raises $ 10 M From Foundry Group"</p>
+					</div>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<a href="" id="button-learn">Learn more about mapbox<i class="fa fa-arrow-right"></i>
+				
+			</a>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- !-->
+	<div id="footer">
+		<div class="wrapper">
+			<div>
+				<div class="link-footer">
+					<a href="" class="blue-link">Design</a><br/>
+					<a href="" class="blue-link">Data</a><br/>
+					<a href="" class="blue-link">Developers</a><br/>
+					<a href="" class="blue-link">Showcase</a><br/>
+					<a href="" class="blue-link">Enterprise</a>
+				</div>
+				<div class="link-footer">
+					<a href="" class="blue-link">Plans</a><br/>
+					<a href="" class="blue-link">Blog</a><br/>
+					<a href="" class="blue-link">Help</a><br/>
+					<a href="" class="blue-link">Status</a><br/>
+					<a href="" class="blue-link">Contact</a><br/>
+				</div>
+				<div class="link-footer">
+					<span>Tools</span><br/>
+					<a href="" class="blue-link">Studlo</a><br/>
+					<a href="" class="blue-link">Makl</a><br/>
+				</div>
+				<div class="link-footer">
+					<a href="" class="gray-link">About</a><br/>
+					<a href="" class="gray-link">Team</a><br/>
+					<a href="" class="gray-link">Jobs</a><br/>
+					<a href="" class="gray-link">Press</a><br/>
+					<a href="" class="gray-link">Press Klt</a><br/>
+				</div>
+				<div class="link-footer">
+					<img src="images/footerguy.jpg">
+				</div>
+				<div class="link-footer" id="follow">
+					<span>Follow Mapbox on</span><br/><a href="" class="blue-link">Twitter</a>, <a href="" class="blue-link">Facebook</a>, <br/>
+					<span>and</span> <a href="" class="blue-link">Instagram</a>
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+			<div id="email">
+				<i class="fa fa-envelope"></i>
+
+				<input type="text" placeholder="Sign up for our newsletter" id="page-footer-email"/>
+				<a href="" id="page-footer-submit">subscribe</a>   
+				<div class="clearfix"></div>
+			</div>
+			<div id="copy-right">
+				<a href="">Terms</a> + <a href="">Privacy</a> &copy Mapbox
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+	
+	function slide(){
+		
+		var i = $( "#slide .paging  span.active").index();
+		
+		$( "#slide .items .item:eq(" + i +" ) " ).fadeOut();
+		
+		$( "#slide .paging span.active").removeClass("active");
+		
+		i++;
+		
+		if( i > $("#slide .paging span").length - 1)
+
+		{
+			
+			i=0;
+
+		}
+
+		$( "#slide .paging span:eq(" + i + ") " ).addClass("active");
+
+		$( "#slide .items .item:eq(" + i +" ) " ).fadeIn()
+
+	}
+	$(function(){
+
+		setInterval(slide, 6000);
+	})	
+</script>
+</html>
